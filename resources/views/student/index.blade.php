@@ -8,11 +8,12 @@
     <link rel="stylesheet" href="/resources/css/app.css">
 </head>
 <body>
-    <form action="{{ route('student.search') }}" method="post" enctype="multipart/form-data">
+    <form action="{{ route('students.search') }}" method="post" enctype="multipart/form-data">
         @csrf
         <div class="searchHolder">
             <input type="number" name="input" placeholder="Search ID">
             <button type="submit">Search</button>
+            <a href="{{route('students.index')}}" >reset</a>
         </div>
     </form>
 

@@ -14,5 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::resource('student', Student::class);
-Route::post('student', [Student::class, 'search'])->name('student.search');
+Route::resource('students', Student::class);
+Route::post('students', [Student::class, 'search'])->name('students.search');
